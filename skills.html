@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS</title>
+    <style>
+            html, body{
+                margin: 0;
+                height: 100%;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                overflow: hidden;
+            }
+            .bg{
+                background-image: url('media/bg.jpg');
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            a {
+                text-decoration: none;
+            }
+			header {
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+			}
+			.navbar {
+				padding: 25px;
+			}
+			.navbar a {
+				padding: 0 100px 0 100px;
+				color: whitesmoke;
+			}
+            .navbar a:hover {
+                color: aqua;
+            }
+			.container {
+				margin: 0 100px 0 100px;
+				padding: 50px;
+				border: 2px solid whitesmoke;
+                border-radius: 15px;
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				justify-content: center;
+			}
+			.box {
+				margin: 20px;
+                padding: 0 5px 0 5px;
+			}
+            .name {
+                color: aqua;
+                text-transform: uppercase;
+            }
+            .descrip {
+                color: whitesmoke;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+            .mySlides {
+                display: none;
+            }
+            img {
+                vertical-align: middle;
+            }
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .prevp{
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: 200px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                user-select: none;
+                text-decoration: none;
+            }
+            .prevp:hover {
+                background-color: aqua;
+            }
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            @keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+            @media only screen and (max-width: 300px) {
+                .prev, .next,.text {font-size: 11px}
+            }
+            .descrip {
+                font-size: 18px;
+            }
+    </style>
+</head>
+<body>
+    <div class="bg">
+    <header>
+        <nav class="navbar">
+            <a href="index.html">BIO</a>
+            <a href="">SKILLS</a>
+            <a href="fam.html">FAMILY</a>
+            <a href="resto.html">RESTAURANT</a>
+        </nav>
+    </header>
+    <div class="container">
+        <a class="prevp" href="skills1.html">❯❯</a>
+        <div class="box">
+        <div class="name">
+            <h1>MARTIAL ARTS</h1>
+        </div>
+        <div class="descrip">
+            <p>I belong to our family's Art of the<br> Martial Club (The AM Team).
+                I have<br> trained in the Filipino Martial Arts<br> of Arnis-Kali and the Chinese<br> Martial Arts of Wushu/Kung Fu.
+            </p>
+        </div>
+        </div>
+        <div class="box">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <video src="media/ma.mp4" style="width:100%" autoplay controls loop></video>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <video src="media/ma1.mp4" style="width:100%" autoplay controls loop></video>
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="media/ma1.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                      <div class="numbertext">4 / 6</div>
+                      <img src="media/ma2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 6</div>
+                      <img src="media/ma3.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">6 / 6</div>
+                      <img src="media/ma4.jpg" style="width:100%">
+                    </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                  <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+    <script>
+    let slideIndex = 1;
+        showSlides(slideIndex);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+        }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+        </script>
+</body>
+</html>
